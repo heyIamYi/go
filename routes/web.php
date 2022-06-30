@@ -31,4 +31,5 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
-Route::get('jquery-tree-view',array('as'=>'jquery.treeview','uses'=>'TreeController@treeView'));
+Route::get('/jquery-tree-view',array('as'=>'jquery.treeview','uses'=>'TreeController@treeView'));
+Route::get('/gogo',[Controller::class,'index']);
